@@ -6,6 +6,7 @@ function ENT:ExitJumper() --################# Get out the jumper@RononDex
 		self.Pilot:UnSpectate()
 		self.Pilot:DrawViewModel(true)
 		self.Pilot:DrawWorldModel(true)
+		print("You exited the Jumper!", "Yay!")
 		self.Pilot:Spawn()
 		self.Pilot:SetNetworkedBool("isFlyingjumper",false)
 		self.Pilot:SetPos(self:GetPos()+self:GetForward()*15+self:GetUp()*-40)
